@@ -1,0 +1,13 @@
+{
+    "name" : "Peers.js",
+    "description" : "Local peer discovery module for Node.js",
+    "homepage" : "http://github.com/patrisk/Peers.js",
+    "version" : "0.0.1",
+    "author" : "Patrick Skevik <patrick.skevik@gmail.com>",
+    "main" : "./lib/peers",
+    
+    "repository" : {
+	"type" : "git",
+	"url": "https://github.com/patrisk/Peers.js"
+    }
+}
