@@ -150,7 +150,7 @@ Peers.prototype.discovered = function (buffer, rinfo) {
 
   debug('emitting peer: %s', peer);
 
-  self.emit('peer', peer);
+  self.emit('peer', peer, peerInfoHashHex);
 };
 
 Peers.prototype.peers = function () {
