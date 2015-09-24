@@ -163,7 +163,10 @@ Peers.prototype.stop = function (cb) {
   if (self.resendTimeoutId) {
     clearTimeout(self.resendTimeoutId);
   }
-  self.socket.close(cb);
+  if (cb !== undefined) {
+    self.socket.on('close', cb);
+  }
+  self.socket.close();
 };
 
 exports.Peers = Peers;
