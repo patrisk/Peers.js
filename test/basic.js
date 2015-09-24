@@ -13,10 +13,10 @@ test('listen', function (t) {
     }),
     timeoutId,
     passed = false;
-  p.on("listening", function () {
+  p.on("ready", function () {
     var hash = new Buffer(40);
 
-    console.log('listening event');
+    console.log('ready event');
     hash.fill(0);
     hash[0] = 1;
     p.announce('1111', hash);
